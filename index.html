@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Apology 💕</title>
+  <meta name="description" content="A warm retro apology microsite with an aeroplane intro, heartfelt letter, cassette playlist, flip cards, and a gentle final note.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/intro1.png" type="image/png">
+</head>
+<body>
+
+  <!-- ===================================================================
+       0. AEROPLANE INTRO OVERLAY
+       =================================================================== -->
+  <div id="introOverlay" class="aeroplane-intro-overlay">
+    <!-- Layered Animated Clouds -->
+    <svg class="cloud cloud-1" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="cloudGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#FFF5F0" stop-opacity="0.95"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="60" cy="55" rx="35" ry="25" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="85" cy="50" rx="40" ry="30" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="110" cy="55" rx="35" ry="25" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="75" cy="65" rx="50" ry="25" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+    </svg>
+
+    <svg class="cloud cloud-2" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="cloudGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#FFF9F3" stop-opacity="0.95"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="60" cy="55" rx="35" ry="25" fill="url(#cloudGrad2)" stroke="#EE964B" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="85" cy="50" rx="40" ry="30" fill="url(#cloudGrad2)" stroke="#EE964B" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="110" cy="55" rx="35" ry="25" fill="url(#cloudGrad2)" stroke="#EE964B" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="75" cy="65" rx="50" ry="25" fill="url(#cloudGrad2)" stroke="#EE964B" stroke-width="1.5" stroke-opacity="0.35"/>
+    </svg>
+
+    <svg class="cloud cloud-3" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="cloudGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#F0F5F3" stop-opacity="0.95"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="60" cy="55" rx="35" ry="25" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="85" cy="50" rx="40" ry="30" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="110" cy="55" rx="35" ry="25" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="75" cy="65" rx="50" ry="25" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+    </svg>
+
+    <svg class="cloud cloud-4" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="60" cy="55" rx="35" ry="25" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="85" cy="50" rx="40" ry="30" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="110" cy="55" rx="35" ry="25" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="75" cy="65" rx="50" ry="25" fill="url(#cloudGrad1)" stroke="#D95D39" stroke-width="1.5" stroke-opacity="0.35"/>
+    </svg>
+
+    <svg class="cloud cloud-5" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="60" cy="55" rx="35" ry="25" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="85" cy="50" rx="40" ry="30" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="110" cy="55" rx="35" ry="25" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+      <ellipse cx="75" cy="65" rx="50" ry="25" fill="url(#cloudGrad3)" stroke="#8DA399" stroke-width="1.5" stroke-opacity="0.35"/>
+    </svg>
+
+    <!-- Flying Aeroplane -->
+    <div class="aeroplane-container">
+      <img src="assets/aeroplane.png" alt="Aeroplane" class="aeroplane-img">
+    </div>
+
+    <!-- Intro Typewriter -->
+    <div class="intro-typing-box">
+      <div class="intro-typing-text">
+        <span id="introTypingContent"></span><span class="intro-cursor"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===================================================================
+       1. SCREEN 1: LANDING PAGE
+       =================================================================== -->
+  <section id="screenLanding" class="screen-section active">
+    <!-- Floating background spheres -->
+    <div class="bg-bubble bg-retro-yellow animate-float" style="top: 10%; left: 6%; width: 2.25rem; height: 2.25rem; opacity: 0.65;"></div>
+    <div class="bg-bubble bg-retro-pink animate-float-slow" style="top: 16%; right: 8%; width: 3.25rem; height: 3.25rem; opacity: 0.5;"></div>
+    <div class="bg-bubble bg-retro-green animate-float" style="bottom: 12%; left: 8%; width: 1.75rem; height: 1.75rem; opacity: 0.7;"></div>
+
+    <div style="text-align: center; margin-bottom: 2.5rem; position: relative; z-index: 10;">
+      <span class="font-hand text-retro-pink" style="font-size: 1.75rem; display: block; transform: rotate(-2deg); margin-bottom: 0.75rem;">welcome to my little thought...</span>
+      <h1 class="font-display text-primary" style="font-size: clamp(2.75rem, 7vw, 5.5rem); line-height: 1.05; letter-spacing: -0.02em;">Hey You 💕</h1>
+    </div>
+
+    <!-- Notepad Window -->
+    <div class="retro-card landing-window">
+      <!-- Mac Window control dots -->
+      <div class="window-dots">
+        <div class="window-dot dot-red"></div>
+        <div class="window-dot dot-yellow"></div>
+        <div class="window-dot dot-green"></div>
+      </div>
+
+      <!-- Floating Cute Stickers -->
+      <img src="assets/intro1.png" alt="Cute sticker" class="landing-sticker-top animate-float">
+      
+      <div style="margin: 1.5rem 0 2rem; color: #4A5568; line-height: 1.7;">
+        <p class="font-body" style="font-size: 1.15rem; color: #2D3748;">I wanted to do a tiny something because you mean a lot to me.</p>
+        <p class="font-hand" style="font-size: 1.5rem; margin-top: 1.25rem; color: var(--color-primary); font-weight: 700;">
+          <span id="landingTypewriterText"></span><span class="intro-cursor"></span>
+        </p>
+      </div>
+
+      <div style="text-align: center;">
+        <button id="btnOpenThis" class="btn-retro" style="font-size: 1.15rem;">
+          Open This 💖 <span aria-hidden="true" style="margin-left: 4px;">→</span>
+        </button>
+      </div>
+
+      <img src="assets/intro2.png" alt="Decoration" class="landing-sticker-bottom animate-float-slow">
+    </div>
+
+    <footer style="margin-top: 3rem; text-align: center; color: #718096; font-size: 1.15rem;" class="font-hand">
+      Made with love (and a little courage) 💕
+    </footer>
+  </section>
+
+
+  <!-- ===================================================================
+       2. SCREEN 2: HEARTFELT LETTER & 3D ENVELOPE
+       =================================================================== -->
+  <section id="screenLetter" class="screen-section">
+    <!-- Floating background spheres -->
+    <div class="bg-bubble bg-retro-yellow animate-float" style="top: 8%; left: 8%; width: 2.25rem; height: 2.25rem; opacity: 0.6;"></div>
+    <div class="bg-bubble bg-retro-pink animate-float-slow" style="top: 14%; right: 10%; width: 3rem; height: 3rem; opacity: 0.5;"></div>
+    <div class="bg-bubble bg-retro-green animate-float" style="bottom: 15%; left: 6%; width: 1.75rem; height: 1.75rem; opacity: 0.65;"></div>
+
+    <div style="text-align: center; margin-bottom: 2rem; position: relative; z-index: 10;">
+      <span class="font-hand text-retro-pink" style="font-size: 1.75rem; display: block; transform: rotate(-2deg); margin-bottom: 0.5rem;">Straight from my heart</span>
+      <h2 class="font-display text-primary" style="font-size: clamp(2.25rem, 5vw, 4rem); letter-spacing: -0.02em;">A Little Note 💌</h2>
+    </div>
+
+    <!-- Letter Container Card -->
+    <div class="retro-card letter-container-card">
+
+      <!-- Sealed Envelope State (Initial View) -->
+      <div id="envelopeView" style="display: block; text-align: center;">
+        <div id="envelopeInteractive" class="envelope-wrapper">
+          <div class="envelope-body"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-seal">💌</div>
+          <div class="envelope-paper-emerge"></div>
+          <div style="position: absolute; top: -0.5rem; right: -0.5rem; color: var(--color-retro-pink); font-size: 1rem; animation: float 3s infinite;">💕</div>
+          <div style="position: absolute; bottom: -0.5rem; left: -0.5rem; color: var(--color-primary); font-size: 1rem; animation: float-slow 3s infinite;">💖</div>
+        </div>
+
+        <div style="margin-top: 1.75rem;">
+          <p style="font-size: 0.95rem; font-weight: 600; color: #4A5568; margin-bottom: 0.5rem;">Click to open</p>
+          <div style="display: inline-block; padding: 0.35rem 1.25rem; background: rgba(246, 211, 101, 0.85); border-radius: 9999px; font-size: 0.8rem; font-weight: 800; color: var(--color-primary); border: 2px solid rgba(92, 36, 28, 0.25); box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+            Just For You 💌
+          </div>
+        </div>
+      </div>
+
+      <!-- Opened Letter Paper (Appears after clicking envelope) -->
+      <div id="openedLetterView" style="display: none;">
+        <div class="letter-paper">
+          <img src="assets/letter.png" alt="Love Sticker" class="letter-top-sticker">
+
+          <!-- Header -->
+          <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid rgba(92, 36, 28, 0.15); padding-bottom: 0.85rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div style="width: 38px; height: 38px; border-radius: 9999px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-retro-pink) 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.15rem; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+                💝
+              </div>
+              <span class="font-body" style="font-weight: 800; font-size: 1.15rem; color: var(--color-primary);">Hey My Favorite Person</span>
+            </div>
+          </div>
+
+          <!-- Letter Content -->
+          <div class="letter-text-body">
+            <div style="color: var(--color-primary); font-weight: 700; font-size: 1.5rem; margin-bottom: 1rem;">Hey love,</div>
+            <p>I may have messed up a bit. I never meant to hurt you, sometimes my brain trips over my heart. What I do know for sure is how much you matter to me.</p>
+            <p style="margin-top: 1rem;">You're incredibly special to me, and I hate the idea of being the reason you felt anything less than loved.</p>
+            <p style="margin-top: 1rem;">Thank you for being you. I hope this makes you smile, even just a little.</p>
+          </div>
+
+          <!-- Signature -->
+          <div style="text-align: right; margin-top: 2rem;">
+            <div class="font-letter" style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">
+              <span id="letterSignatureTyped"></span><span class="intro-cursor"></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="letterContinueBox" style="text-align: center; margin-top: 2rem; display: none;">
+          <button id="btnLetterContinue" class="btn-retro">
+            Keep Going ✨ <span aria-hidden="true" style="margin-left: 4px;">→</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================================================================
+       3. SCREEN 3: CASSETTE PLAYLIST (VINTAGE MIXTAPE)
+       =================================================================== -->
+  <section id="screenPlaylist" class="screen-section">
+    <!-- Floating background spheres with musical notes -->
+    <div class="bg-bubble bg-retro-yellow animate-float" style="top: 8%; left: 8%; width: 2.5rem; height: 2.5rem; opacity: 0.6; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #4A5568;">♪</div>
+    <div class="bg-bubble bg-retro-pink animate-float-slow" style="top: 15%; right: 10%; width: 3rem; height: 3rem; opacity: 0.5; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🎧</div>
+    <div class="bg-bubble bg-retro-green animate-float" style="bottom: 12%; left: 7%; width: 2rem; height: 2rem; opacity: 0.7; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #4A5568;">♫</div>
+
+    <div style="text-align: center; margin-bottom: 2.5rem; position: relative; z-index: 10;">
+      <span class="font-hand text-retro-pink" style="font-size: 1.75rem; display: block; transform: rotate(-2deg); margin-bottom: 0.5rem;">Hope they feel nice</span>
+      <h2 class="font-display text-primary" style="font-size: clamp(2rem, 5vw, 3.75rem); letter-spacing: -0.02em;">Some Songs That Reminded Me of You</h2>
+    </div>
+
+    <!-- Cassette Tapes List -->
+    <div class="cassettes-list">
+      
+      <!-- Cassette 1 -->
+      <div class="cassette-card" data-track-id="0" style="background-color: #F4E4D6; border-color: #DCBCA0; transform: rotate(-2deg);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <div>
+            <div class="font-body" style="font-weight: 800; font-size: 1.25rem; color: var(--color-primary);">High On You</div>
+            <div class="font-hand" style="font-size: 1.2rem; color: #718096; margin-top: 0.15rem;">Basically… my heart, signed over 💖</div>
+          </div>
+          <span style="font-size: 0.75rem; font-weight: 800; background: rgba(92, 36, 28, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--color-primary);">SIDE A</span>
+        </div>
+
+        <!-- Tape Window -->
+        <div class="cassette-tape-window">
+          <div class="tape-reel">
+            <div class="tape-reel-spokes">
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+            </div>
+          </div>
+          <div class="tape-magnetic-strip"></div>
+          <div class="tape-reel">
+            <div class="tape-reel-spokes">
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="cassette-controls">
+          <button class="btn-play-pause" title="Play/Pause">▶</button>
+          <div class="cassette-progress-wrapper">
+            <div class="cassette-progress-bar">
+              <div class="cassette-progress-fill"></div>
+            </div>
+            <div class="cassette-time">
+              <span class="time-current">0:00</span>
+              <span class="time-duration">--:--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cassette 2 -->
+      <div class="cassette-card" data-track-id="1" style="background-color: #E8F4E4; border-color: #C0DCB0; transform: rotate(1deg) translateY(0.5rem);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <div>
+            <div class="font-body" style="font-weight: 800; font-size: 1.25rem; color: var(--color-primary);">For a Reason</div>
+            <div class="font-hand" style="font-size: 1.2rem; color: #718096; margin-top: 0.15rem;">I'd still choose you 🤍</div>
+          </div>
+          <span style="font-size: 0.75rem; font-weight: 800; background: rgba(92, 36, 28, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--color-primary);">SIDE A</span>
+        </div>
+
+        <!-- Tape Window -->
+        <div class="cassette-tape-window">
+          <div class="tape-reel">
+            <div class="tape-reel-spokes">
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+            </div>
+          </div>
+          <div class="tape-magnetic-strip"></div>
+          <div class="tape-reel">
+            <div class="tape-reel-spokes">
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="cassette-controls">
+          <button class="btn-play-pause" title="Play/Pause">▶</button>
+          <div class="cassette-progress-wrapper">
+            <div class="cassette-progress-bar">
+              <div class="cassette-progress-fill"></div>
+            </div>
+            <div class="cassette-time">
+              <span class="time-current">0:00</span>
+              <span class="time-duration">--:--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cassette 3 -->
+      <div class="cassette-card" data-track-id="2" style="background-color: #E4E8F4; border-color: #B0C0DC; transform: rotate(-1deg) translateY(-0.25rem);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <div>
+            <div class="font-body" style="font-weight: 800; font-size: 1.25rem; color: var(--color-primary);">Dil ka Jo Haal hai</div>
+            <div class="font-hand" style="font-size: 1.2rem; color: #718096; margin-top: 0.15rem;">Because feelings happened 💖</div>
+          </div>
+          <span style="font-size: 0.75rem; font-weight: 800; background: rgba(92, 36, 28, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--color-primary);">SIDE B</span>
+        </div>
+
+        <!-- Tape Window -->
+        <div class="cassette-tape-window">
+          <div class="tape-reel">
+            <div class="tape-reel-spokes">
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+            </div>
+          </div>
+          <div class="tape-magnetic-strip"></div>
+          <div class="tape-reel">
+            <div class="tape-reel-spokes">
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+              <div class="tape-reel-spoke"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="cassette-controls">
+          <button class="btn-play-pause" title="Play/Pause">▶</button>
+          <div class="cassette-progress-wrapper">
+            <div class="cassette-progress-bar">
+              <div class="cassette-progress-fill"></div>
+            </div>
+            <div class="cassette-time">
+              <span class="time-current">0:00</span>
+              <span class="time-duration">--:--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <button id="btnPlaylistContinue" class="btn-retro">
+        Next ✨ <span aria-hidden="true" style="margin-left: 4px;">→</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ===================================================================
+       4. SCREEN 4: 3D MEMORY FLIP CARDS
+       =================================================================== -->
+  <section id="screenCards" class="screen-section">
+    <div style="text-align: center; margin-bottom: 2rem; position: relative; z-index: 10;">
+      <span class="font-hand text-retro-pink" style="font-size: 1.75rem; display: block; transform: rotate(-4deg); margin-bottom: 0.5rem;">just saying…</span>
+      <h2 class="font-display text-primary" style="font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -0.02em;">Little Things I Messed Up (But Care About)</h2>
+      <p style="font-weight: 600; color: #718096; margin-top: 0.75rem; font-size: 1.05rem;">Tap to flip 💫</p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid">
+      
+      <!-- Card 1 (Pink) -->
+      <div class="card-perspective-box" style="transform: rotate(-3deg) translateY(1rem);">
+        <div class="washi-tape"></div>
+        <div class="card-flip-inner">
+          <!-- Front -->
+          <div class="card-face card-front bg-note-pink">
+            <h3 class="font-hand text-primary" style="font-size: 2.25rem; line-height: 1.35; padding: 0.5rem;">
+              I may have been a little dumb sometimes 🥺
+            </h3>
+          </div>
+          <!-- Back -->
+          <div class="card-face card-back" style="border-color: var(--note-pink);">
+            <img src="assets/pic1.jpg" alt="Memory 1" class="card-photo-img">
+            <p class="font-body" style="font-weight: 800; font-size: 1rem; color: var(--color-primary); margin-bottom: 0.2rem;">Context:</p>
+            <p class="font-body" style="font-size: 0.85rem; color: #4A5568; line-height: 1.4;">No bad intentions, just bad timing. I'm working on it.</p>
+            <span style="font-size: 1.4rem; margin-top: 0.35rem;">🥺</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 (Yellow) -->
+      <div class="card-perspective-box" style="transform: rotate(4deg) translateY(-0.5rem);">
+        <div class="washi-tape" style="transform: translateX(-50%) rotate(-2deg);"></div>
+        <div class="card-flip-inner">
+          <!-- Front -->
+          <div class="card-face card-front bg-note-yellow">
+            <h3 class="font-hand text-primary" style="font-size: 2.25rem; line-height: 1.35; padding: 0.5rem;">
+              You get adorably mad
+            </h3>
+          </div>
+          <!-- Back -->
+          <div class="card-face card-back" style="border-color: var(--note-yellow);">
+            <img src="assets/pic2.jpg" alt="Memory 2" class="card-photo-img">
+            <p class="font-body" style="font-weight: 800; font-size: 1rem; color: var(--color-primary); margin-bottom: 0.2rem;">Observation:</p>
+            <p class="font-body" style="font-size: 0.85rem; color: #4A5568; line-height: 1.4;">Even when you're upset, you're still my favorite person.</p>
+            <span style="font-size: 1.3rem; margin-top: 0.35rem; color: #E53E3E;">❤️</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 (Blue) -->
+      <div class="card-perspective-box" style="transform: rotate(-5deg) translateY(1.5rem);">
+        <div class="washi-tape" style="transform: translateX(-50%) rotate(2deg);"></div>
+        <div class="card-flip-inner">
+          <!-- Front -->
+          <div class="card-face card-front bg-note-blue">
+            <h3 class="font-hand text-primary" style="font-size: 2.1rem; line-height: 1.35; padding: 0.5rem;">
+              Coupon: One free hug (redeem anytime) 🫂
+            </h3>
+          </div>
+          <!-- Back -->
+          <div class="card-face card-back" style="border-color: var(--note-blue);">
+            <img src="assets/pic3.jpg" alt="Memory 3" class="card-photo-img">
+            <p class="font-body" style="font-weight: 800; font-size: 1rem; color: var(--color-primary); margin-bottom: 0.2rem;">I Love You Always</p>
+            <p class="font-body" style="font-size: 0.85rem; color: #4A5568; line-height: 1.4;">Btw, This is Us</p>
+            <div class="card-stamp-badge">ALWAYS</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 3.5rem;">
+      <button id="btnCardsContinue" class="btn-retro">
+        Next ✨ <span aria-hidden="true" style="margin-left: 4px;">→</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ===================================================================
+       5. SCREEN 5: FINAL LOVE LETTER & WAX SEALING FINALE
+       =================================================================== -->
+  <section id="screenFinal" class="screen-section">
+    <div style="text-align: center; margin-bottom: 2rem; position: relative; z-index: 10;">
+      <span class="font-hand text-retro-pink" style="font-size: 1.75rem; display: block; transform: rotate(-2deg); margin-bottom: 0.5rem;">the grand finale...</span>
+      <h2 class="font-display text-primary" style="font-size: clamp(2.25rem, 5vw, 4rem); letter-spacing: -0.02em;">One Last Thing</h2>
+    </div>
+
+    <!-- Final Letter Card -->
+    <div class="retro-card final-letter-card">
+      
+      <!-- Unsealed State View -->
+      <div id="finalUnsealedView">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+          <div style="width: 44px; height: 44px; border-radius: 9999px; background-color: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; box-shadow: var(--shadow-retro);">
+            ✉
+          </div>
+          <h3 class="font-display text-primary" style="font-size: 1.5rem;">Final Love Letter</h3>
+        </div>
+
+        <div class="final-letter-box">
+          <p style="color: var(--color-primary); font-weight: 700; font-size: 1.5rem; margin-bottom: 0.75rem;">Hey love,</p>
+          <p style="color: #4A5568; margin-bottom: 0.75rem;">I might mess up sometimes, but my feelings for you are always real.</p>
+          <p style="color: #2D3748; font-weight: 600; margin-bottom: 0.75rem;">Thank you for your patience, your heart, and being you.</p>
+          <p style="color: #4A5568; margin-bottom: 0.75rem;">I hope this reminded you how important you are to me.</p>
+          <p style="color: #4A5568; margin-bottom: 0.75rem;">You matter more to me than I know how to say.</p>
+          <p style="color: var(--color-primary); font-weight: 700; font-size: 1.4rem; margin-top: 1rem;">This is me, choosing you. Always.</p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.75rem; padding-top: 0.5rem;">
+          <div class="font-hand" style="font-size: 1.25rem; color: #718096;">
+            This is me, choosing you.
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <button id="btnSealIt" class="btn-retro" style="padding: 0.75rem 1.75rem;">
+              Seal It 💌 ❤
+            </button>
+            <button id="btnFinalRestart" class="btn-retro btn-retro-secondary" style="padding: 0.75rem 1.75rem;">
+              Restart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sealed Celebratory View -->
+      <div id="finalSealedView" class="sealed-view-card" style="display: none;">
+        <div class="sealed-badge-circle">💝</div>
+        
+        <h2 class="font-display text-primary" style="font-size: 2.25rem; margin-bottom: 0.35rem;">Sent With Love</h2>
+        <p class="font-body" style="font-size: 1.15rem; color: #718096;">You Matter To Me</p>
+
+        <!-- 7 Pulsing Hearts -->
+        <div class="hearts-row">
+          <span class="heart-item" style="animation-delay: 0ms;">❤</span>
+          <span class="heart-item" style="animation-delay: 140ms;">❤</span>
+          <span class="heart-item" style="animation-delay: 280ms;">❤</span>
+          <span class="heart-item" style="animation-delay: 420ms;">❤</span>
+          <span class="heart-item" style="animation-delay: 560ms;">❤</span>
+          <span class="heart-item" style="animation-delay: 700ms;">❤</span>
+          <span class="heart-item" style="animation-delay: 840ms;">❤</span>
+        </div>
+
+        <div class="sealed-note-box">
+          <div class="font-hand text-primary" style="font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem;">
+            <span id="sealedSignatureTyped"></span><span class="intro-cursor"></span>
+          </div>
+          <div id="currentDateDisplay" class="font-body" style="font-size: 0.9rem; color: #718096;"></div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <button id="btnReplayWholeSite" class="btn-retro">
+            See Again ✨ <span aria-hidden="true" style="margin-left: 4px;">↺</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================================================================
+       FULLSCREEN SEALING MODAL OVERLAY
+       =================================================================== -->
+  <div id="sealingModal" class="sealing-modal-overlay">
+    <div class="spinning-letter-icon">💌</div>
+    <div class="font-body text-primary" style="font-weight: 600; font-size: 1.1rem;">Wrapping this up gently...</div>
+  </div>
+
+
+  <!-- Persistent Audio Elements -->
+  <div id="audioContainer" style="display: none;">
+    <audio id="audioTrack0" src="assets/music1.mp3" preload="metadata"></audio>
+    <audio id="audioTrack1" src="assets/music2.mp3" preload="metadata"></audio>
+    <audio id="audioTrack2" src="assets/music3.mp3" preload="metadata"></audio>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
